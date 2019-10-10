@@ -16,4 +16,16 @@ public class ThreadUtil {
             e.printStackTrace();
         }
     }
+    /**
+     * 线程暂停
+     *
+     * @param mills 暂停毫秒数
+     */
+    public static void sleep2(long mills) {
+        try {
+            TimeUnit.MILLISECONDS.sleep(mills);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
